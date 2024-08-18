@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../src/vendor/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="../../src/vendor/owl/css/owl.css">
+  <link rel="stylesheet" href="../../src/vendor/fontawesome/fontawesome.css">
+  <link rel="stylesheet" href="../../src/vendor/jquery-ui/jquery-ui.min.css">
+  <link rel="stylesheet" href="../../src/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Holistic Welness</title>
+  <link rel="icon" href="assets/images/header.jpg">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo.png" class="img-fluid" alt="Responsive image">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+              aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="">
+              Home
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="">
+              Produtos
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" rel="about" href=about>
+              Sobre nós
+            </a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" rel="login" href="login">
+              Login
+            </a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" rel="contact" href="contact">
+              Contato
+            </a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" rel="register" href="register">
+              Cadastro
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="caption">
+            <h2>Vida Holística</h2>
+            <div class="line-dec"></div>
+            <p>Sejam bem-vindos ao site cheio de produtos para quem busca viver uma vida baseada em terapias holísticas!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="logo">
+            <img src="assets/images/header-logo.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="footer-menu">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Produtos</a></li>
+              <li><a href="about" rel="about" class="nav-modal-open">Sobre</a></li>
+              <li><a href="contact" rel="contact" class="nav-modal-open">Contato</a></li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="social-icons">
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright-text">
+            <p>Holistic Welness &copy; Todos os direitos reservados</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../src/vendor/jquery/jquery-3.6.0.min.js"></script>
+  <script src="../../src/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../../src/vendor/owl/js/owl.js"></script>
+  <script src="../../src/vendor/jquery-mask/jquery.mask.min.js"></script>
+  <script src="../../src/vendor/jquery-ui/jquery-ui.min.js"></script>
+
+  <!--Scripts Customizados -->
+  <script src="./js/custom.js"></script>
+
+</body>
