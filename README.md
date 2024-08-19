@@ -1,6 +1,13 @@
 # Guia de Configuração e Execução da Aplicação
 
-Siga os passos abaixo para configurar e executar a aplicação corretamente.
+Tecnologias Utilizadas:
+
+ - ASP.NET Core: Framework para desenvolvimento de aplicações web e APIs.
+ - Angular: Framework para construção da interface do usuário.
+ - Node.js: Ambiente de execução para JavaScript no servidor.
+ - C#: Linguagem de programação principal para a lógica do servidor.
+ - HTML, CSS e TypeScript: Tecnologias para o desenvolvimento do frontend.
+ - SQL Server: Sistema de gerenciamento de banco de dados usado pelo Entity Framework para criar tabelas e realizar consultas.
 
 ## Passo 1: Baixar e Instalar o Visual Studio 2022 Community
 
@@ -13,6 +20,9 @@ Siga os passos abaixo para configurar e executar a aplicação corretamente.
 1. Abra o Visual Studio 2022.
 2. Clique em **Clonar Repositório**.
 3. Insira o link do repositório e siga as instruções para clonar o projeto para o seu ambiente local.
+4. Defina dois projetos de inicialização:
+   -YogaCommerce.Application
+   -YogaCommerce.WebServer
 
 ## Passo 3: Baixar e Instalar o Node.js
 
@@ -30,4 +40,4 @@ Siga os passos abaixo para configurar e executar a aplicação corretamente.
 
 ## Passo 5: Banco de Dados
 
-1. Adicione o arquivo .bak no seu banco de dados
+1. Adicione o arquivo .bak no seu banco de dados (SQL SERVER)
