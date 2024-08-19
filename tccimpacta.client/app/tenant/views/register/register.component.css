@@ -37,3 +37,71 @@ p {
   margin-top: 1rem;
   font-weight: bold;
 }
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-outline {
+  position: relative;
+}
+
+.form-label {
+  margin-bottom: 0.5rem; /* Espaço entre o rótulo e o campo */
+}
+
+
+.form-group {
+  margin-bottom: 1.5rem; /* Espaço abaixo de cada grupo de formulário */
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem; /* Espaço entre o rótulo e o campo de entrada */
+}
+
+.form-control {
+  width: 100%; /* Garante que o campo de entrada ocupe a largura total */
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem; /* Ajuste o tamanho da fonte conforme necessário */
+  font-weight: bold;
+  margin-bottom: 2rem; /* Ajuste o espaçamento abaixo do título */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-outline {
+  position: relative;
+}
+
+.form-label {
+  margin-bottom: 0.5rem; /* Espaço entre o rótulo e o campo */
+}
+
+
+.form-group {
+  margin-bottom: 1.5rem; /* Espaço abaixo de cada grupo de formulário */
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem; /* Espaço entre o rótulo e o campo de entrada */
+}
+
+.form-control {
+  width: 100%; /* Garante que o campo de entrada ocupe a largura total */
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem; /* Ajuste o tamanho da fonte conforme necessário */
+  font-weight: bold;
+  margin-bottom: 2rem; /* Ajuste o espaçamento abaixo do título */
+}
