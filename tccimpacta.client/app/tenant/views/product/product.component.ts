@@ -3,8 +3,8 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  templateUrl: './product.component.html',
+  styleUrls: ['./product.component.css']
 })
 
-export class HomeComponent { }
+export class ProductComponent { }
