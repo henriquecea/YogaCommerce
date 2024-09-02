@@ -13,6 +13,7 @@
     <PackageReference Include="Microsoft.AspNetCore.SpaProxy">
       <Version>8.*-*</Version>
     </PackageReference>
+    <PackageReference Include="SecureIdentity" Version="1.0.4" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
@@ -21,6 +22,7 @@
     <ProjectReference Include="..\tccimpacta.client\TCCImpacta.Web.esproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
+    <ProjectReference Include="..\tccimpacta.client\YogaCommerce.WebServer.esproj" />
   </ItemGroup>
 
 </Project>

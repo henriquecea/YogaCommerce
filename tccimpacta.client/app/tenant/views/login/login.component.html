@@ -13,29 +13,35 @@
                   <h4 class="mt-1 mb-5 pb-1">We are The Lotus Team</h4>
                 </div>
 
-                <form>
-                  <p>Please login to your account</p>
+                <p style="margin-bottom: 10px">Por favor, faça o login na sua conta.</p>
 
+                <form (ngSubmit)="loginUser()">
                   <div class="d-flex flex-row align-items-center mb-4">
                     <i class="fa fa-user fa-lg me-3 fa-fw"></i>
                     <div data-mdb-input-init class="form-outline flex-fill mb-0">
-                      <input type="text" id="form3Example1c" class="form-control" placeholder="Username" />
+                      <input type="text" id="form3Example1c" class="form-control" [(ngModel)]="user.email" name="email" placeholder="E-mail" required />
                     </div>
                   </div>
 
-                  <
-
-                  <div class="text-center pt-1 mb-5 pb-1">
-                    <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">
-                      Log
-                      in
-                    </button>
-                    <a class="text-muted" href="#!">Forgot password?</a>
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fa fa-lock fa-lg me-3 fa-fw"></i>
+                    <div data-mdb-input-init class="form-outline flex-fill mb-0">
+                      <input type="password" id="form3Example2c" class="form-control" [(ngModel)]="user.password" name="password" placeholder="Senha" required />
+                    </div>
                   </div>
 
+                  <div class="text-center pt-1 pb-1">
+                    <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">
+                      Login
+                    </button>
+                    <a class="text-muted" href="#!">Esqueceu sua senha?</a>
+                  </div>
+
+                  <p *ngIf="responseMessage" style="margin-top: 5px; margin-bottom: 5px"class="text-center">{{ responseMessage }}</p>
+
                   <div class="d-flex align-items-center justify-content-center pb-4">
-                    <p class="mb-0 me-2">Don't have an account?</p>
-                    <button type="button" onclick="window.location.href='register.html';" data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-danger">Create new</button>
+                    <p class="mb-0 me-2">Ainda não possui uma conta?</p>
+                    <a type="button" rel="register" href="register" class="btn btn-outline-danger">Cadastre-se</a>
                   </div>
 
                 </form>

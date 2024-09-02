@@ -18,7 +18,7 @@ import { HomeComponent } from './tenant/views/home/home.component';
     LoginComponent,
     HomeComponent,
     ProductComponent,
-    ContactComponent
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

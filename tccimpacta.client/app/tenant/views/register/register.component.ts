@@ -9,26 +9,32 @@ import { HttpClient } from '@angular/common/http';
 
 export class RegisterComponent {
   user = {
-    user: '',
+    username: '',
     email: '',
     password: '',
-    confirmPassword: ''
+    confirmPassword: '',
+    termsOfUseAccepted: false
   };
-  responseMessage = '';
+  responseMessage = ''; // Mensagem para mostrar ao usuário
 
   constructor(private http: HttpClient) { }
 
   registerUser(): void {
     const apiUrl = 'https://localhost:7143/register';
-    this.http.post(apiUrl, this.user)
-      .subscribe(
-        response => {
-          this.responseMessage = 'Usuário registrado com sucesso!';
-        },
-        error => {
-          this.responseMessage = 'Erro ao registrar usuário' + error;
-          console.error('erro aqui' + error);
+
+    // Envia a requisição ao backend
+    this.http.post<any>(apiUrl, this.user).subscribe(
+      response => {
+        this.responseMessage = response.message; // Exibe a mensagem retornada do backend
+      },
+      error => {
+        if (error.status === 400) {
+          const errorMessage = error.error?.message || 'Erro desconhecido.';
+          this.responseMessage = errorMessage; // Exibe a mensagem de erro retornada do backend
+        } else {
+          this.responseMessage = 'Erro ao registrar usuário: ' + (error.error?.message || error.message);
         }
-      );
+      }
+    );
   }
 }

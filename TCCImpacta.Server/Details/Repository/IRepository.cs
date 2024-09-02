@@ -1,4 +1,6 @@
-﻿namespace YogaCommerce.Application.Details.Repository;
+﻿using System.Linq.Expressions;
+
+namespace YogaCommerce.Application.Details.Repository;
 
 public interface IRepository<T> where T : class
 {
@@ -8,4 +10,5 @@ public interface IRepository<T> where T : class
     Task UpdateAsync(T entity);
     Task DeleteAsync(int id);
     Task SaveChangesAsync();
+    Task<T> FirstOrDefaultAsync(Expression<Func<T, bool>> predicate);
 }
