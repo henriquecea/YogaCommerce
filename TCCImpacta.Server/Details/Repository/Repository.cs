@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 using YogaCommerce.EntityFramework.Data;
 
 namespace YogaCommerce.Application.Details.Repository;
@@ -46,5 +47,10 @@ public class Repository<T> : IRepository<T> where T : class
     public async Task SaveChangesAsync()
     {
         await _context.SaveChangesAsync();
+    }
+
+    public async Task<T> FirstOrDefaultAsync(Expression<Func<T, bool>> predicate)
+    {
+        return await _dbSet.Where(predicate).FirstOrDefaultAsync();
     }
 }
