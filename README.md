@@ -2,16 +2,22 @@
 Um ecommerce de produtos para yoga.
 
 ## Index 
-1. [Modelagem de Dados](#modelagem)  
+1. [Board](#board)
+2. [Modelagem de Dados](#modelagem)  
     1. [Modelo Conceitual](#mconceitual)  
     2. [Modelo Lógico](#mlogico)  
     3. [Dicionário de Dados](#mdicionario)  
-2. [Uml](#uml) 
+3. [Uml](#uml) 
     1. [Diagrama de Caso de Uso](#ucasouso)  
     2. [Especificações do Caso de Uso](#uespecificacoes)  
     3. [Diagrama de Classes](#uclasses)  
-3. [Guia de Configuração e Execução da Aplicação](#guia)
-4. [Contribuidores do projeto](#contribuidores)
+4. [Guia de Configuração e Execução da Aplicação](#guia)
+5. [Contribuidores do projeto](#contribuidores)
+
+<a name="board"/>
+
+## Board
+[Trello](https://trello.com/invite/b/66d8e01890f08c9c44a0d087/ATTI25bc3809b3104402f73db8c3b67ad37250EE1A50/yoga-commerce-projeto)
 
 <a name="modelagem"/>
 
