@@ -123,7 +123,7 @@ Tecnologias Utilizadas:
 
 # Contribuidores do projeto:
 - Henrique Cea [Linkedin](https://www.linkedin.com/in/henriquecea/)
-- Moisés Xavier [Linkedin](www.linkedin.com/in/moises-xavier)
+- Moisés Xavier [Linkedin](https://www.linkedin.com/in/moises-xavier)
 - Gabriel Ramalho [Linkedin](https://www.linkedin.com/in/gabriel-ramalho-6060732b5/)
 - Lilian Gouveia [Linkedin](https://www.linkedin.com/in/fromlily/)
 - Alexandre Muniz 
