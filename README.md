@@ -10,7 +10,8 @@ Um ecommerce de produtos para yoga.
     1. [Diagrama de Caso de Uso](#ucasouso)  
     2. [Especificações do Caso de Uso](#uespecificacoes)  
     3. [Diagrama de Classes](#uclasses)  
-3. [Guia de Configuração e Execução da Aplicação](#guia)  
+3. [Guia de Configuração e Execução da Aplicação](#guia)
+4. [Contribuidores do projeto](#contribuidores)
 
 <a name="modelagem"/>
 
@@ -117,3 +118,13 @@ Tecnologias Utilizadas:
 ## Passo 5: Banco de Dados
 
 1. Adicione o arquivo .bak no seu banco de dados (SQL SERVER)
+
+<a name="contribuidores"/>
+
+# Contribuidores do projeto:
+- Henrique Cea (Linkedin)[https://www.linkedin.com/in/henriquecea/]
+- Moisés Xavier (Linkedin)[www.linkedin.com/in/moises-xavier]
+- Gabriel Ramalho (Linkedin)[https://www.linkedin.com/in/gabriel-ramalho-6060732b5/]
+- Lilian Gouveia (Linkedin)[https://www.linkedin.com/in/fromlily/]
+- Alexandre Muniz 
+- Vitor 
