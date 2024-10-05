@@ -1,99 +1,77 @@
-<div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
+<section class="h-100 gradient-form" style="background-color: #eee;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-xl-6">
+        <div class="card rounded-3 shadow text-black">
+          <div class="row g-0 justify-content-center align-items-center">
+            <div class="card-body p-md-5 mx-md-4">
+
+              <div class="text-center">
+                <h3 class="mt-1 mb-5 pb-1"><b>CONTATO</b></h3>
+              </div>
+
+              <form>
+                <!-- Nome -->
+                <div class="d-flex flex-row align-items-center mb-4">
+                  <i class="fa fa-user fa-lg me-3 fa-fw"></i>
+                  <div data-mdb-input-init class="form-outline flex-fill mb-0">
+                    <input type="text" id="formName" class="form-control" name="name" placeholder="Nome" required />
+                  </div>
+                </div>
+
+                <!-- Telefone -->
+                <div class="d-flex flex-row align-items-center mb-4">
+                  <i class="fa fa-phone fa-lg me-3 fa-fw"></i>
+                  <div data-mdb-input-init class="form-outline flex-fill mb-0">
+                    <input type="tel" id="formPhone" class="form-control" name="phone" placeholder="Telefone" required />
+                  </div>
+                </div>
+
+                <!-- E-mail -->
+                <div class="d-flex flex-row align-items-center mb-4">
+                  <i class="fa fa-envelope fa-lg me-3 fa-fw"></i>
+                  <div data-mdb-input-init class="form-outline flex-fill mb-0">
+                    <input type="email" id="formEmail" class="form-control" name="email" placeholder="E-mail" required />
+                  </div>
+                </div>
+
+                <!-- Assunto -->
+                <div class="d-flex flex-row align-items-center mb-4">
+                  <i class="fa fa-tag fa-lg me-3 fa-fw"></i>
+                  <div data-mdb-input-init class="form-outline flex-fill mb-0">
+                    <input type="text" id="formSubject" class="form-control" name="subject" placeholder="Assunto" required />
+                  </div>
+                </div>
+
+                <!-- Mensagem -->
+                <div class="d-flex flex-row align-items-center mb-4">
+                  <i class="fa fa-comment fa-lg me-3 fa-fw"></i>
+                  <div data-mdb-input-init class="form-outline flex-fill mb-0">
+                    <textarea id="formMessage" class="form-control" name="message" placeholder="Mensagem" rows="4" required></textarea>
+                  </div>
+                </div>
+
+                <!-- Anexo -->
+                <div class="d-flex flex-row align-items-center mb-4">
+                  <i class="fa fa-paperclip fa-lg me-3 fa-fw"></i>
+                  <div data-mdb-input-init class="form-outline flex-fill mb-0">
+                    <input type="file" id="formAttachment" class="form-control" name="attachment" />
+                  </div>
+                </div>
+
+                <!-- Botão Enviar -->
+                <div class="text-center pt-1 pb-1">
+                  <button class="w-100 btn btn-outline-dark btn-md btn-block" type="submit">
+                    Enviar
+                  </button>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
-<div id="contato" class="visually-hidden">
-
-  <form action="post" class="form">
-
-    <div class="mb-3">
-      <label for="nome" class="form-label">Nome</label>
-      <input type="text"
-             name="nome"
-             id="nome"
-             class="form-control"
-             placeholder="Digite seu nome"
-             aria-describedby="helpNome" />
-      <small id="helpNome" class="text-muted">Digite um nome válido</small>
-    </div>
-
-    <div class="mb-3">
-      <label for="email" class="form-label">E-mail</label>
-      <input type="text"
-             name="email"
-             id="email"
-             class="form-control"
-             placeholder="Digite seu email"
-             aria-describedby="helpEmail" />
-      <small id="helpEmail" class="text-muted">Digite um e-mail válido</small>
-    </div>
-
-    <div class="mb-3">
-      <label for="date" class="form-label">Data</label>
-      <input type="text"
-             name="date"
-             id="date"
-             class="form-control"
-             placeholder="Digite uma data válida"
-             aria-describedby="helpDate" />
-      <small id="helpDate" class="text-muted">Digite uma data válida </small>
-    </div>
-
-    <div class="mb-3">
-      <label for="time" class="form-label">Hora</label>
-      <input type="text"
-             name="time"
-             id="time"
-             class="form-control"
-             placeholder="Digite uma hora"
-             aria-describedby="helpTime" />
-      <small id="helpTime" class="text-muted">Digite uma hora válida</small>
-    </div>
-
-    <div class="mb-3">
-      <label for="cep" class="form-label">CEP</label>
-      <input type="text"
-             name="cep"
-             id="cep"
-             class="form-control"
-             placeholder="Digite seu CEP"
-             aria-describedby="helpCep" />
-      <small id="helpCep" class="text-muted">Digite um CEP válido</small>
-    </div>
-
-    <div class="mb-3">
-      <label for="phone" class="form-label">Telefone</label>
-      <input type="text"
-             name="phone"
-             id="phone"
-             class="form-control"
-             placeholder="Digite seu telefone"
-             aria-describedby="helpPhone" />
-      <small id="helpPhone" class="text-muted">Digite um celular válido</small>
-    </div>
-
-    <div class="mb-3">
-      <label for="cpf" class="form-label">CPF</label>
-      <input type="text"
-             name="cpf"
-             id="cpf"
-             class="form-control"
-             placeholder="Digite seu CPF"
-             aria-describedby="helpCPF" />
-      <small id="helpCPF" class="text-muted">Digite um CPF válido</small>
-    </div>
-
-    <button type="submit" class="btn btn-primary">Submit</button>
-
-  </form>
-
-</div>
+</section>
