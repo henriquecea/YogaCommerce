@@ -6,7 +6,7 @@ using YogaCommerce.EntityFramework.Data.Models;
 
 namespace YogaCommerce.EntityFramework.Data
 {
-    public class AppDbContext : DbContext 
+    public class AppDbContext : DbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options)
             : base(options)
@@ -14,6 +14,7 @@ namespace YogaCommerce.EntityFramework.Data
         }
 
         public DbSet<User> Users { get; set; }
+        public DbSet<Contact> Contact { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

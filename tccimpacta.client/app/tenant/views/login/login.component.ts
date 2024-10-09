@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 
 export class LoginComponent {
   user = {
-    email: '',  // Corrigido para 'username'
+    email: '',
     password: ''
   };
   responseMessage = ''; // Mensagem para mostrar ao usuário

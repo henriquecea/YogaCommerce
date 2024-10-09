@@ -7,11 +7,11 @@ using YogaCommerce.EntityFramework.Data.Models;
 namespace YogaCommerce.Application.Controllers;
 
 [ApiController]
-public class YogaCommerceController : ControllerBase
+public class AccountController : ControllerBase
 {
     private readonly IRepository<User> _userRepository;
 
-    public YogaCommerceController(IRepository<User> userRepository)
+    public AccountController(IRepository<User> userRepository)
     {
         _userRepository = userRepository;
     }
