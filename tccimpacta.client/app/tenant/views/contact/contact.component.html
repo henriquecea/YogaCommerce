@@ -10,12 +10,12 @@
                 <h3 class="mt-1 mb-5 pb-1"><b>CONTATO</b></h3>
               </div>
 
-              <form>
+              <form (ngSubmit)="sendContact()">
                 <!-- Nome -->
                 <div class="d-flex flex-row align-items-center mb-4">
                   <i class="fa fa-user fa-lg me-3 fa-fw"></i>
                   <div data-mdb-input-init class="form-outline flex-fill mb-0">
-                    <input type="text" id="formName" class="form-control" name="name" placeholder="Nome" required />
+                    <input type="text" id="formName" class="form-control" name="name" placeholder="Nome" [(ngModel)]="contact.name" required />
                   </div>
                 </div>
 
@@ -23,7 +23,14 @@
                 <div class="d-flex flex-row align-items-center mb-4">
                   <i class="fa fa-phone fa-lg me-3 fa-fw"></i>
                   <div data-mdb-input-init class="form-outline flex-fill mb-0">
-                    <input type="tel" id="formPhone" class="form-control" name="phone" placeholder="Telefone" required />
+                    <input type="tel"
+                           id="formPhone"
+                           class="form-control"
+                           name="phone"
+                           placeholder="(00) 00000-0000"
+                           maxlength="13"
+                           [(ngModel)]="contact.phone"
+                           required />
                   </div>
                 </div>
 
@@ -31,7 +38,7 @@
                 <div class="d-flex flex-row align-items-center mb-4">
                   <i class="fa fa-envelope fa-lg me-3 fa-fw"></i>
                   <div data-mdb-input-init class="form-outline flex-fill mb-0">
-                    <input type="email" id="formEmail" class="form-control" name="email" placeholder="E-mail" required />
+                    <input type="email" id="formEmail" class="form-control" name="email" placeholder="E-mail" [(ngModel)]="contact.email" required />
                   </div>
                 </div>
 
@@ -39,7 +46,7 @@
                 <div class="d-flex flex-row align-items-center mb-4">
                   <i class="fa fa-tag fa-lg me-3 fa-fw"></i>
                   <div data-mdb-input-init class="form-outline flex-fill mb-0">
-                    <input type="text" id="formSubject" class="form-control" name="subject" placeholder="Assunto" required />
+                    <input type="text" id="formSubject" class="form-control" name="subject" placeholder="Assunto" [(ngModel)]="contact.subject" required />
                   </div>
                 </div>
 
@@ -47,27 +54,20 @@
                 <div class="d-flex flex-row align-items-center mb-4">
                   <i class="fa fa-comment fa-lg me-3 fa-fw"></i>
                   <div data-mdb-input-init class="form-outline flex-fill mb-0">
-                    <textarea id="formMessage" class="form-control" name="message" placeholder="Mensagem" rows="4" required></textarea>
-                  </div>
-                </div>
-
-                <!-- Anexo -->
-                <div class="d-flex flex-row align-items-center mb-4">
-                  <i class="fa fa-paperclip fa-lg me-3 fa-fw"></i>
-                  <div data-mdb-input-init class="form-outline flex-fill mb-0">
-                    <input type="file" id="formAttachment" class="form-control" name="attachment" />
+                    <textarea id="formMessage" class="form-control" name="message" placeholder="Mensagem" rows="4" [(ngModel)]="contact.message" required></textarea>
                   </div>
                 </div>
 
                 <!-- Botão Enviar -->
                 <div class="text-center pt-1 pb-1">
-                  <button class="w-100 btn btn-outline-dark btn-md btn-block" type="submit">
+                  <button data-mdb-button-init data-mdb-ripple-init class="w-100 btn btn-outline-dark btn-md btn-block" type="submit">
                     Enviar
                   </button>
                 </div>
 
-              </form>
+                <p *ngIf="responseMessage" style="margin-top: 5px; margin-bottom: 5px" class="text-center">{{ responseMessage }}</p>
 
+              </form>
             </div>
           </div>
         </div>
