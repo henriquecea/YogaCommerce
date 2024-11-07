@@ -15,6 +15,7 @@ namespace YogaCommerce.EntityFramework.Data
 
         public DbSet<User> Users { get; set; }
         public DbSet<Contact> Contact { get; set; }
+        public DbSet<Shopping> Shopping { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
