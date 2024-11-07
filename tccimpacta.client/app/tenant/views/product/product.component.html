@@ -7,12 +7,18 @@
       <div class="col-xl-10">
         <div class="card rounded-3 shadow text-black">
           <div class="card-body p-md-5 mx-md-4">
-            <div class="text-center">
-              <h3 class="mt-1 mb-5 pb-1"><b>PRODUTOS</b></h3>
+            <div class="row text-center">
+              <div class="col-md-6">
+                <h3 class="mt-1 mb-5 pb-1"><b>PRODUTOS</b></h3>
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control" placeholder="Seu e-mail" aria-label="E-mail" [(ngModel)]="product.emailAddress">
+              </div>
             </div>
 
+
             <div class="row row-cols-1 row-cols-md-3 g-4">
-              
+
               <!-- TAPETE DE YOGA PU -->
               <div class="col-md-4">
                 <div class="card h-100 d-flex flex-column">
@@ -38,14 +44,14 @@
                     </button>
                   </div>
                   <div class="card-body d-flex flex-column align-items-center justify-content-between">
-                    <h5 class="card-title">Tapete de Yoga PU</h5>
+                    <h5 class="card-title" [(ngModel)]="product.productName">Tapete de Yoga PU</h5>
                     <p class="card-text text-justify flex-grow-1">
                       Ideal para Ashtanga e todos os outros estilos de yoga que exigem aderência máxima. <br>
                       185 x 66cm | 4mm | 2.5 kg <br>
                       Borracha natural ecológica com revestimento PU <br>
                     </p>
-                    <p class="card-price text-start mb-3" style="font-weight: bold; font-size: 1.2rem;">R$ 475,00</p> <!-- Campo adicionado com o valor do produto -->
-                    <button class="btn btn-outline-dark btn-md w-100">Comprar</button>
+                    <p class="card-price text-start mb-3" style="font-weight: bold; font-size: 1.2rem;" [(ngModel)]="product.productValue">R$ 475,00</p> <!-- Campo adicionado com o valor do produto -->
+                    <button class="btn btn-outline-dark btn-md w-100" type="submit" (click)="buyProduct()">TENHO INTERESSE</button>
                   </div>
                 </div>
               </div>
@@ -82,7 +88,7 @@
                       PVC ecológico de alta qualidade <br>
                     </p>
                     <p class="card-price text-start mb-3" style="font-weight: bold; font-size: 1.2rem;">R$ 195,000</p> <!-- Campo adicionado com o valor do produto -->
-                    <button class="btn btn-outline-dark btn-md w-100">Comprar</button>
+                    <button class="btn btn-outline-dark btn-md w-100">TENHO INTERESSE</button>
                   </div>
                 </div>
               </div>
@@ -119,7 +125,7 @@
                       Adequado para yoga, pilates e ginástica <br>
                     </p>
                     <p class="card-price text-start mb-3" style="font-weight: bold; font-size: 1.2rem;">R$ 500,00</p> <!-- Campo adicionado com o valor do produto -->
-                    <button class="btn btn-outline-dark btn-md w-100">Comprar</button>
+                    <button class="btn btn-outline-dark btn-md w-100">TENHO INTERESSE</button>
                   </div>
                 </div>
               </div>
@@ -158,7 +164,7 @@
                       Fácil de ajustar, com fivela deslizante <br>
                     </p>
                     <p class="card-price text-start mb-3" style="font-weight: bold; font-size: 1.2rem;">R$ 65,00</p> <!-- Campo adicionado com o valor do produto -->
-                    <button class="btn btn-outline-dark btn-md w-100">Comprar</button>
+                    <button class="btn btn-outline-dark btn-md w-100">TENHO INTERESSE</button>
                   </div>
                 </div>
               </div>
@@ -195,7 +201,7 @@
                       Aderente e firme, para mais segurança nas posturas. <br>
                     </p>
                     <p class="card-price text-start mb-3" style="font-weight: bold; font-size: 1.2rem;">R$ 80,00</p> <!-- Campo adicionado com o valor do produto -->
-                    <button class="btn btn-outline-dark btn-md w-100">Comprar</button>
+                    <button class="btn btn-outline-dark btn-md w-100">TENHO INTERESSE</button>
                   </div>
                 </div>
               </div>
@@ -232,7 +238,7 @@
                       Leve, estável e durável. <br>
                     </p>
                     <p class="card-price text-start mb-3" style="font-weight: bold; font-size: 1.2rem;">R$ 70,00</p> <!-- Campo adicionado com o valor do produto -->
-                    <button class="btn btn-outline-dark btn-md w-100">Comprar</button>
+                    <button class="btn btn-outline-dark btn-md w-100">TENHO INTERESSE</button>
                   </div>
                 </div>
               </div>
@@ -271,7 +277,7 @@
                       100% Algodão na capa e recheio de fibra de paina <br>
                     </p>
                     <p class="card-price text-start mb-3" style="font-weight: bold; font-size: 1.2rem;">R$ 300,00</p> <!-- Campo adicionado com o valor do produto -->
-                    <button class="btn btn-outline-dark btn-md w-100">Comprar</button>
+                    <button class="btn btn-outline-dark btn-md w-100">TENHO INTERESSE</button>
                   </div>
                 </div>
               </div>
@@ -309,7 +315,7 @@
                       Capa com zíper removível e lavável <br>
                     </p>
                     <p class="card-price text-start mb-3" style="font-weight: bold; font-size: 1.2rem;">R$ 165,00</p> <!-- Campo adicionado com o valor do produto -->
-                    <button class="btn btn-outline-dark btn-md w-100">Comprar</button>
+                    <button class="btn btn-outline-dark btn-md w-100">TENHO INTERESSE</button>
                   </div>
                 </div>
               </div>
@@ -346,11 +352,11 @@
                       Microfibra e pontos de silicone <br>
                     </p>
                     <p class="card-price text-start mb-3" style="font-weight: bold; font-size: 1.2rem;">R$ 150,00</p> <!-- Campo adicionado com o valor do produto -->
-                    <button class="btn btn-outline-dark btn-md w-100">Comprar</button>
+                    <button class="btn btn-outline-dark btn-md w-100">TENHO INTERESSE</button>
                   </div>
                 </div>
               </div>
-            </div> 
+            </div>
 
           </div>
         </div>
