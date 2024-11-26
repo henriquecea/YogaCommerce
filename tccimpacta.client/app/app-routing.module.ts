@@ -5,14 +5,15 @@ import { LoginComponent } from './tenant/views/login/login.component';
 import { RegisterComponent } from './tenant/views/register/register.component';
 import { ContactComponent } from './tenant/views/contact/contact.component';
 import { ProductComponent } from './tenant/views/product/product.component';
-
+import { PasswordComponent } from './tenant/views/password/password.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'product', component: ProductComponent }
+  { path: 'product', component: ProductComponent },
+  { path: 'password', component: PasswordComponent }
 
   // Defina outras rotas 
 ];
