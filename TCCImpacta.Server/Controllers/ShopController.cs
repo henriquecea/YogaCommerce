@@ -43,7 +43,6 @@ public class ShopController : ControllerBase
         var newContact = new Shopping()
         {
             ProductName = input.ProductName,
-            ProductValue = input.ProductValue,
             EmailAddress = input.EmailAddress
         };
 

@@ -10,9 +10,6 @@ public class Shopping : AuditableEntity
     public string ProductName { get; set; } = string.Empty;
 
     [Required]
-    public decimal ProductValue { get; set; }
-
-    [Required]
     [StringLength(100)]
     [EmailAddress]
     public string EmailAddress { get; set; } = string.Empty;

@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RegisterComponent } from './tenant/views/register/register.component';
 import { LoginComponent } from './tenant/views/login/login.component';
 import { HomeComponent } from './tenant/views/home/home.component';
+import { PasswordComponent } from './tenant/views/password/password.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { HomeComponent } from './tenant/views/home/home.component';
     HomeComponent,
     ProductComponent,
     ContactComponent,
+    PasswordComponent
   ],
   imports: [
     BrowserModule,
